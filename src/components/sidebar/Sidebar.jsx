@@ -35,7 +35,7 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
+                        <li className="sidebarListItem ">
                             <PeopleIcon className="sidebarIcon" />
                             Users
                         </li>
@@ -52,7 +52,7 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Notifications</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
+                        <li className="sidebarListItem">
                             <MailIcon className="sidebarIcon" />
                             Mail
                         </li>
@@ -69,7 +69,7 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
+                        <li className="sidebarListItem">
                             <ManageAccountsIcon className="sidebarIcon" />
                             Manage
                         </li>
