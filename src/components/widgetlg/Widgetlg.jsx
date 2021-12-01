@@ -1,9 +1,51 @@
 import './widgetlg.css'
+import Avatar from '../../images/avatar.png'
 
 const Widgetlg = () => {
+    const Button = ({ type }) => {
+        return <button className={"widgetLgBtn " + type}>{type}</button>
+    }
     return (
         <div className="widgetlg">
             <h3 className="widgetLgTitle">Latest Transactions</h3>
+            <table className="widgetLgTable">
+                <tr className="widgetLgTr">
+                    <th className="widgetLgTh">Customer</th>
+                    <th className="widgetLgTh">Date</th>
+                    <th className="widgetLgTh">Amount</th>
+                    <th className="widgetLgTh">Status</th>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img src={Avatar} alt='' className="widgetLgImg" />
+                        <span className="widgetLgName">Timmy Turner</span>
+                    </td>
+                    <td className="widgetLgDate">1 December 2021</td>
+                    <td className="widgetLgAmount">$40.00</td>
+                    <td className="widgetLgStatus">
+                        <Button type='Declined'/>
+                    </td>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img src={Avatar} alt='' className="widgetLgImg"/>
+                        <span className="widgetLgName">Timmy Turner</span>
+                    </td>
+                    <td className="widgetLgDate">1 December 2021</td>
+                    <td className="widgetLgAmount">$40.00</td>
+                    <td className="widgetLgStatus"><Button type='Pending'/></td>
+                </tr>
+
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img src={Avatar} alt='' className="widgetLgImg"/>
+                        <span className="widgetLgName">Timmy Turner</span>
+                    </td>
+                    <td className="widgetLgDate">1 December 2021</td>
+                    <td className="widgetLgAmount">$40.00</td>
+                    <td className="widgetLgStatus"><Button type='Approved'/></td>
+                </tr>
+            </table>
         </div>
     )
 }

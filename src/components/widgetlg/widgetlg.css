@@ -5,3 +5,57 @@
     -moz-box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
     padding: 20px;
 }
+
+.widgetLgTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.widgetLgTable {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.widgetLgTh {
+    text-align: left;
+}
+
+.widgetLgImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.widgetLgUser {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.widgetLhDate,.widgetLgAmount {
+    font-weight: 300;
+}
+
+.widgetLgBtn {
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+}
+
+.widgetLgBtn.Approved {
+    background-color: rgb(223, 254, 223);
+    color: rgb(24, 179, 0);
+}
+
+.widgetLgBtn.Declined {
+    background-color: rgb(250, 215, 215);
+    color: rgb(252, 1, 1);
+
+}
+
+.widgetLgBtn.Pending {
+    background-color: rgb(247, 245, 211);
+    color: rgb(97, 106, 0);
+}
