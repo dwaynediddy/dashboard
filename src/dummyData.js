@@ -1,3 +1,5 @@
+import Avatar from '../src/images/avatar.png'
+
 export const userData = [
     {
       name: 'Jan',
@@ -48,4 +50,57 @@ export const userData = [
       name: 'Dec',
       'Active User': 4490,
     },
+  ]
+
+  
+  export const rows = [
+    { 
+        id: 1, 
+        userName: 'Snow', 
+        avatar: Avatar, 
+        email: 'jonny@gmail.com',
+        status: 'active',
+        transaction: '$80.00',
+      },
+    { 
+        id: 2, 
+        userName: 'Snow', 
+        avatar: Avatar, 
+        email: 'jonny@gmail.com',
+        status: 'innactive',
+        transaction: '$80.00',
+      },
+    { 
+        id: 3, 
+        userName: 'Snow', 
+        avatar: Avatar, 
+        email: 'jonny@gmail.com',
+        status: 'innactive',
+        transaction: '$80.00',
+      },
+    { 
+        id: 4, 
+        userName: 'Snow', 
+        avatar: Avatar, 
+        email: 'jonny@gmail.com',
+        status: 'active',
+        transaction: '$80.00',
+      },
+    { 
+        id: 5, 
+        userName: 'Snow', 
+        avatar: Avatar, 
+        email: 'jonny@gmail.com',
+        status: 'active',
+        transaction: '$80.00',
+      },
+    { 
+        id: 6, 
+        userName: 'Snow', 
+        avatar: Avatar, 
+        email: 'jonny@gmail.com',
+        status: 'active',
+        transaction: '$80.00',
+      },
+  
   ]
