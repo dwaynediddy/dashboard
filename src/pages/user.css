@@ -1,0 +1,114 @@
+.user {
+    flex: 4;
+    padding: 20px;
+}
+
+.userTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userAddButton {
+    border: none;
+    width:80px ;
+    padding: 5px;
+    background-color: rgb(33, 189, 174);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.userContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.userShow {
+    flex: 1;
+    padding: 10px;
+    box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.userUpdate {
+    flex: 2;
+    padding: 10px;
+    margin-left: 20px;
+    box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px -1px 8px 0.5px rgba(0,0,0,0.24);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.userShowTop {
+    display: flex;
+    align-items: center;
+}
+
+.userShowImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userShowTopTitle {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.userShowUsername {
+    font-weight: 600;
+}
+
+.userShowUserJobTitle {
+    font-weight: 300;
+    color: #555
+}
+
+/* bottom part */
+.userShowBottom {
+    margin: 20px;
+}
+
+.userShowBottomTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(135, 135, 135)
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: rgb(70, 70, 70)
+}
+.userIcon {
+    font-size: 16px !important;
+    color: rgb(70, 70, 70)
+}
+
+.infoShowUserTitle {
+    margin-left: 10px;
+}
+
+.userUpdate {
+    
+}
+.userUpdateTitle {
+
+}
+.userUpdateForm {
+
+}
+
+.userUpdateInput {
+    
+}
