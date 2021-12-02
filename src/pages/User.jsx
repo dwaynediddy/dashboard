@@ -4,6 +4,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined'
+import PublishIcon from '@mui/icons-material/Publish'
 
 
 const User = () => {
@@ -16,7 +17,11 @@ const User = () => {
             <div className="userContainer">
                 <div className="userShow">
                     <div className="userShowTop">
-                        <img className='userShowImg' src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="" />
+                        <img 
+                        src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" 
+                        alt=""
+                        className='userShowImg' 
+                        />
                         <div className="userShowTopTitle">
                             <span className="userShowUsername">add name</span>
                             <span className="userShowUserJobTitle">add job title</span>
@@ -60,7 +65,7 @@ const User = () => {
                                     />
                                 </div>
                                 <div className="userUpdatesItem">
-                                    <label>D.O.B</label>
+                                    <label>Full Name</label>
                                     <input 
                                         type="text" 
                                         className="userUpdateInput" 
@@ -72,7 +77,7 @@ const User = () => {
                                     <input 
                                         type="text" 
                                         className="userUpdateInput" 
-                                        placeholder="Username"
+                                        placeholder="Email@email.com"
                                     />
                                 </div>
                                 <div className="userUpdatesItem">
@@ -92,7 +97,16 @@ const User = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="userUpdateRight"></div>
+                            <div className="userUpdateRight">
+                                <div className="userUpdateUpload">
+                                     <img src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" 
+                                     alt="" 
+                                     className="userUpdateimg" />
+                                     <label htmlFor="file"><PublishIcon className="userEditIcon" /></label>
+                                     <input type='file' id='file' style={{ display: 'none'}} />
+                                </div>
+                                <button className="userUpdateBtn">Update</button>
+                            </div>
                         </form>
                 </div>
             </div>
