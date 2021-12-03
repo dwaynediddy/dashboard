@@ -4,6 +4,7 @@ import Topbar from "./components/topbar/Topbar"
 import Home from './pages/Home'
 import UserList from './pages/UserList'
 import User from './pages/User'
+import NewUser from './pages/NewUser'
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/"element={<Home />} />
         <Route path="/users"element={<UserList />} />
         <Route path="/users/:userId"element={<User />} />
+        <Route path="/newUser/"element={<NewUser />} />
       </Routes>
       </div>
     </Router>

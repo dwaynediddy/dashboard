@@ -1,4 +1,6 @@
 import './user.css'
+import { Link } from 'react-router-dom'
+
 import PermIdentityIcon from '@mui/icons-material/PermIdentity'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
@@ -12,7 +14,9 @@ const User = () => {
         <div className="user">
             <div className="userTitleContainer">
                 <h2 className="userTitle">Edit User</h2>
-                <button className="userAddButton">Create</button>
+                <Link to='/newUser'>
+                    <button className="userAddButton">Create</button>
+                </Link>
             </div>
             <div className="userContainer">
                 <div className="userShow">

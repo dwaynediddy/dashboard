@@ -10,6 +10,7 @@ import DynamicFeedIcon from '@mui/icons-material/DynamicFeed'
 import ForumIcon from '@mui/icons-material/Forum'
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts'
 import ReportIcon from '@mui/icons-material/Report'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     return (
@@ -35,14 +36,18 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem ">
-                            <PeopleIcon className="sidebarIcon" />
-                            Users
-                        </li>
+                        <Link to='users' className='link'>
+                            <li className="sidebarListItem ">
+                                <PeopleIcon className="sidebarIcon" />
+                                Users
+                            </li>
+                        </Link>
+                        <Link to='products' className='link'>
                         <li className="sidebarListItem">
                             <StorefrontIcon className="sidebarIcon" />
                             Products
                         </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <PointOfSaleIcon className="sidebarIcon" /> 
                             Transactions
