@@ -40,7 +40,7 @@ const ProductList = () => {
           renderCell: (params) => {
               return (
                   <>
-                      <Link to={'/products/'+params.row.id}>
+                      <Link to={'/product/' + params.row.id}>
                           <button className="productListEdit">Edit</button>
                       </Link>
                       <DeleteForeverIcon className="productListDelete" onClick={() => handleDelete(params.row.id)} />

@@ -52,6 +52,22 @@ export const userData = [
     },
   ]
 
+
+export const productData = [
+    {
+      name: 'Jan',
+      'Sales': 3240,
+    },
+    {
+      name: 'Feb',
+      'Sales': 2180,
+    },
+    {
+      name: 'Mar',
+      'Sales': 2800,
+    },
+  ]
+
   
   export const userRows = [
     { 
@@ -109,7 +125,7 @@ export const userData = [
     { 
         id: 1, 
         name: 'Coffee', 
-        image: 'https://images.unsplash.com/photo-1634896941598-b6b500a502a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', 
+        image: 'https://images.unsplash.com/photo-1605711599412-775918dbe770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwYmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60', 
         stock: 50,
         status: 'active',
         price: '$40.00',

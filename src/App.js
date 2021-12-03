@@ -6,6 +6,8 @@ import UserList from './pages/UserList'
 import User from './pages/User'
 import NewUser from './pages/NewUser'
 import ProductList from './pages/ProductList'
+import Product from './pages/Product'
+import NewProduct from './pages/ProductList'
 
 import {
   BrowserRouter as Router,
@@ -24,9 +26,9 @@ function App() {
         <Route path="/users"element={<UserList />} />
         <Route path="/users/:userId"element={<User />} />
         <Route path="/newUser/"element={<NewUser />} />
-        <Route exact path="/products"element={<ProductList />} />
-        <Route exact path="/products/:productId"element={<ProductList />} />
-        <Route path="/newProduct"element={<UserList />} />
+        <Route exact path="/product"element={<ProductList />} />
+        <Route exact path="/product/:productId"element={<Product />} />
+        <Route path="/newProduct"element={<NewProduct />} />
       </Routes>
       </div>
     </Router>

@@ -19,7 +19,7 @@ const columns = [
   { field: 'user', headerName: 'user', width: 200, renderCell: (params) => { 
       return (
             <div className="userListUser">
-                <img src={params.row.avatar} alt='' className="productListImg" /> 
+                <img src={params.row.avatar} alt='' className="userListImg" /> 
                 {params.row.username}
             </div>
       )}},
@@ -41,7 +41,7 @@ const columns = [
     renderCell: (params) => {
         return (
             <>
-                <Link to={'/users/'+params.row.id}>
+                <Link to={'/users/' + params.row.id}>
                     <button className="userListEdit">Edit</button>
                 </Link>
                 <DeleteForeverIcon className="userListDelete" onClick={() => handleDelete(params.row.id)} />
