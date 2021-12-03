@@ -11,11 +11,11 @@ const NewProduct = () => {
           </div>
           <div className="addProductItem">
             <label>Name</label>
-            <input type="text" placeholder="Apple Airpods" />
+            <input type="text" placeholder="Coffee" />
           </div>
           <div className="addProductItem">
             <label>Stock</label>
-            <input type="text" placeholder="123" />
+            <input type="text" placeholder="40" />
           </div>
           <div className="addProductItem">
             <label>Active</label>
