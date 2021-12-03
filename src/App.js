@@ -7,7 +7,7 @@ import User from './pages/User'
 import NewUser from './pages/NewUser'
 import ProductList from './pages/ProductList'
 import Product from './pages/Product'
-import NewProduct from './pages/ProductList'
+import NewProduct from './pages/NewProduct'
 
 import {
   BrowserRouter as Router,
