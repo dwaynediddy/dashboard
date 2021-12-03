@@ -53,7 +53,7 @@ export const userData = [
   ]
 
   
-  export const rows = [
+  export const userRows = [
     { 
         id: 1, 
         userName: 'Snow', 
@@ -102,5 +102,42 @@ export const userData = [
         status: 'active',
         transaction: '$80.00',
       },
+  
+  ]
+  
+  export const productRows = [
+    { 
+        id: 1, 
+        name: 'Coffee', 
+        image: 'https://images.unsplash.com/photo-1634896941598-b6b500a502a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60', 
+        stock: 50,
+        status: 'active',
+        price: '$40.00',
+      },
+    { 
+        id: 2, 
+        name: 'Coffee', 
+        image: 'https://images.unsplash.com/photo-1605711599412-775918dbe770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwYmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60', 
+        stock: 50,
+        status: 'active',
+        price: '$40.00',
+      },
+    { 
+        id: 3, 
+        name: 'Coffee', 
+        image: 'https://images.unsplash.com/photo-1605711599412-775918dbe770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwYmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60', 
+        stock: 50,
+        status: 'active',
+        price: '$40.00',
+      },
+    { 
+        id: 4, 
+        name: 'Coffee', 
+        image: 'https://images.unsplash.com/photo-1605711599412-775918dbe770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwYmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60', 
+        stock: 50,
+        status: 'active',
+        price: '$40.00',
+      },
+
   
   ]

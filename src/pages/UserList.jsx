@@ -3,13 +3,12 @@ import { useState } from 'react'
 import './userList.css'
 import { DataGrid } from '@mui/x-data-grid'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import Avatar from '../images/avatar.png'
 
-import { rows } from '../dummyData'
+import { userRows } from '../dummyData'
 import { Link } from "react-router-dom"
 
 const UserList = () => {
-    const [ data, setData ] = useState(rows)
+    const [ data, setData ] = useState(userRows)
 
     const handleDelete = (id) => {
         setData(data.filter(item => item.id !== id))
@@ -20,9 +19,7 @@ const columns = [
   { field: 'user', headerName: 'user', width: 200, renderCell: (params) => { 
       return (
             <div className="userListUser">
-                <img src={Avatar} alt='' className="userListImg" /> 
-                {/* use below for http source */}
-                {/* <img src={params.rows.avatar} alt='' />  */}
+                <img src={params.row.avatar} alt='' className="productListImg" /> 
                 {params.row.username}
             </div>
       )}},
