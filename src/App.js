@@ -8,6 +8,7 @@ import NewUser from './pages/NewUser'
 import ProductList from './pages/ProductList'
 import Product from './pages/Product'
 import NewProduct from './pages/NewProduct'
+import Login from './pages/Login'
 
 import {
   BrowserRouter as Router,
@@ -29,10 +30,13 @@ function App() {
         <Route exact path="/product"element={<ProductList />} />
         <Route exact path="/product/:productId"element={<Product />} />
         <Route path="/newProduct"element={<NewProduct />} />
+        <Route path="/login"element={<Login />} />
       </Routes>
       </div>
     </Router>
-  );
+
+  )
 }
+
 
 export default App;
