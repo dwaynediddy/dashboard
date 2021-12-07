@@ -44,18 +44,18 @@
     border-radius: 10px;
 }
 
-.widgetLgBtn.Approved {
+.widgetLgBtn.approved {
     background-color: rgb(223, 254, 223);
     color: rgb(24, 179, 0);
 }
 
-.widgetLgBtn.Declined {
+.widgetLgBtn.declined {
     background-color: rgb(250, 215, 215);
     color: rgb(252, 1, 1);
 
 }
 
-.widgetLgBtn.Pending {
+.widgetLgBtn.pending {
     background-color: rgb(247, 245, 211);
     color: rgb(97, 106, 0);
 }

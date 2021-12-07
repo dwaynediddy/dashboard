@@ -1,7 +1,26 @@
+import { useState, useEffect } from 'react'
+
 import './widgetlg.css'
-import Avatar from '../../images/avatar.png'
+import { userRequest } from '../../redux/requestMethods'
+
+import { format } from 'timeago.js'
 
 const Widgetlg = () => {
+
+    const [orders, setOrders] = useState([])
+
+    useEffect(() => {
+        const getOrders = async(res) => {
+            try {
+                const res = await userRequest.get('orders')
+                setOrders(res.data)
+            } catch (err) {
+                console.log('error')
+            }
+        }
+            getOrders()
+        }, [])
+
     const Button = ({ type }) => {
         return <button className={"widgetLgBtn " + type}>{type}</button>
     }
@@ -15,36 +34,18 @@ const Widgetlg = () => {
                     <th className="widgetLgTh">Amount</th>
                     <th className="widgetLgTh">Status</th>
                 </tr>
-                <tr className="widgetLgTr">
+                {orders.map(order => (
+                    <tr className="widgetLgTr" key={order._id}>
                     <td className="widgetLgUser">
-                        <img src={Avatar} alt='' className="widgetLgImg" />
-                        <span className="widgetLgName">Timmy Turner</span>
+                        <span className="widgetLgName">{order.userId}</span>
                     </td>
-                    <td className="widgetLgDate">1 December 2021</td>
-                    <td className="widgetLgAmount">$40.00</td>
+                    <td className="widgetLgDate">{format(order.createdAt)}</td>
+                    <td className="widgetLgAmount">${order.amount}</td>
                     <td className="widgetLgStatus">
-                        <Button type='Declined'/>
+                        <Button type={order.status}/>
                     </td>
                 </tr>
-                <tr className="widgetLgTr">
-                    <td className="widgetLgUser">
-                        <img src={Avatar} alt='' className="widgetLgImg"/>
-                        <span className="widgetLgName">Timmy Turner</span>
-                    </td>
-                    <td className="widgetLgDate">1 December 2021</td>
-                    <td className="widgetLgAmount">$40.00</td>
-                    <td className="widgetLgStatus"><Button type='Pending'/></td>
-                </tr>
-
-                <tr className="widgetLgTr">
-                    <td className="widgetLgUser">
-                        <img src={Avatar} alt='' className="widgetLgImg"/>
-                        <span className="widgetLgName">Timmy Turner</span>
-                    </td>
-                    <td className="widgetLgDate">1 December 2021</td>
-                    <td className="widgetLgAmount">$40.00</td>
-                    <td className="widgetLgStatus"><Button type='Approved'/></td>
-                </tr>
+                    ))}
             </table>
         </div>
     )
