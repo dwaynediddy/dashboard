@@ -14,6 +14,7 @@ useEffect(() => {
         try {
             const res = await userRequest.get('orders/income')
             setIncome(res.data)
+            // not reading amount
             setPercentage((res.data[1].amount *100) / res.data[0].amount -100)
         } catch (err) {
             console.log(err)
